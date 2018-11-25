@@ -4,10 +4,12 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
     "antd": "^3.5.4",
     "babel-plugin-import": "^1.7.0",
     "less": "3.0.4",
@@ -16,8 +18,23 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
-  "license": "ISC",
+  "jest": {
+    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.1.0"
+    "@babel/plugin-proposal-decorators": "^7.1.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "@types/next": "^7.0.1",
+    "@types/react-dom": "16.0.8",
+    "typescript": "3.1.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "ts-jest": "^23.10.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0"
   }
 }

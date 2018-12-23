@@ -7,3 +7,7 @@ declare namespace NodeJS {
         fetch: Function;
       }
   }
+
+  declare namespace Window {
+     interface 
+  }
